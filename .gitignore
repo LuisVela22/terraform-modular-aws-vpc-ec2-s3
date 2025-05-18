@@ -1,0 +1,32 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+
+# Directorios de estado
+.terraform/
+
+# Archivos de bloqueo (podrías versionar el .lock.hcl si trabajas en equipo)
+.terraform.lock.hcl
+
+# Archivos de override (locales)
+*.tfvars
+*.tfvars.json
+
+# Archivos de respaldo
+*.backup
+
+# Archivos de salida del plan
+*.out
+
+# Archivos de log
+crash.log
+
+# Archivos temporales del sistema
+*.log
+.DS_Store
+Thumbs.db
+
+# Variables definidas por el usuario
+terraform.tfvars
+*.tfvars
+*.tfvars.json

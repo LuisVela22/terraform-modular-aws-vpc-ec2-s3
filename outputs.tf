@@ -1,21 +1,21 @@
 output "vpc_id" {
   description = "The ID of the VPC"
-  value       = aws_vpc.main.id
-  
+  value       = module.network.vpc_id
+
 }
 
 output "public_subnet_id" {
   description = "The ID of the public subnet"
-  value       = aws_subnet.public.id
-  
+  value       = module.network.public_subnet_id
+
 }
 
 output "ec2_ip" {
   description = "The public IP of the EC2 instance"
-  value       = aws_instance.web.public_ip
+  value       = module.compute.ec2_ip
 }
 
 output "s3_bucket_name" {
   description = "The name of the S3 bucket"
-  value       = aws_s3_bucket.bucket.bucket
+  value       = module.storage.s3_bucket_name
 }
